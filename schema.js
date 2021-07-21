@@ -18,6 +18,8 @@ const typeDefs = gql`
   type Query {
     classes: [Class]
     students: [Student]
+    class(id: Int!): Class
+    student(id: Int!): Student
   }
 `;
 
